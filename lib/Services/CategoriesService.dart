@@ -8,7 +8,8 @@ class CategoriesServices {
     // http.Response response = await http.get(
     //   Uri.parse(''),
     // );
-    List<dynamic> data = await api()
+    List<dynamic> data = await Api()
+        // ignore: missing_required_param
         .get(url: 'https://fakestoreapi.com/products/category/$categoryName');
 
     List<ProductModel> productsList = [];

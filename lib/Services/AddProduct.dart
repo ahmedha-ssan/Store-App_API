@@ -9,7 +9,8 @@ class AddProduct {
     required String desc,
     required String category,
   }) async {
-    Map<String, dynamic> data = await api().post(
+    // ignore: missing_required_param
+    Map<String, dynamic> data = await Api().post(
       url: 'https://fakestoreapi.com/products',
       body: {
         'title': title,
